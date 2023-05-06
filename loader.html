@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading Example</title>
+  <style>
+    /* Стили для лоудера */
+    .loader {
+      border: 16px solid #f3f3f3; /* Светло-серый цвет */
+      border-top: 16px solid #3498db; /* Синий цвет */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Стили для текста */
+    .loading-text {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Стили для цитаты */
+    .quote {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Лоудер -->
+  <div class="loader"></div>
+
+  <!-- Текст с сообщением об ожидании -->
+  <div class="loading-text">
+    <h2>Пожалуйста, подождите, идет загрузка...</h2>
+  </div>
+
+  <!-- Цитата о загрузке на node js -->
+  <div class="quote">
+    <p>Идет загрузка на Node.js...</p>
+  </div>
+</body>
+</html>
