@@ -9,7 +9,7 @@ const app = express();
 const serveStatic = require('serve-static');
 const octokit = new Octokit();
 
-const PORT = 80;
+const PORT = process.env.PORT || 8000;
 
 const outputDir = './admiralui-flutter';
 const repository = 'admiral-team/admiralui-flutter';
